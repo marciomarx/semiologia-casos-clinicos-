@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Anemia Hemolítica Imunomediada</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Identificação de Reação de Hipersensibilidade Tipo II</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Paula Menezes (38 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual seu nome e idade?</p>
+<p><strong>Resposta do Paciente:</strong> Paula Menezes, 38 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a sua queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Estou muito cansada, com a pele amarelada e minha urina está bem escura.</p>
+<p><em><strong>Nota Educativa:</strong> Anemia hemolítica pode causar icterícia, fadiga intensa e colúria (urina escura).</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Quando esses sintomas começaram?</p>
+<p><strong>Resposta do Paciente:</strong> Começaram há uns 3 dias e estão piorando.</p>
+<p><em><strong>Nota Educativa:</strong> Sintomas hemolíticos podem se desenvolver progressivamente após exposição a agentes desencadeantes.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou tempo de evolução dos sintomas</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Você usou algum medicamento recentemente?</p>
+<p><strong>Resposta do Paciente:</strong> Estava tomando cefalosporina para infecção urinária há uns 10 dias.</p>
+<p><em><strong>Nota Educativa:</strong> Algumas cefalosporinas podem desencadear reações de hipersensibilidade tipo II com hemólise imune.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Perguntou sobre medicamentos recentes</label>
+</div>
+
+<h3>Adesão ao Tratamento:</h3>
+<p><strong>Pergunta esperada:</strong> Você terminou o tratamento ou ainda está usando?</p>
+<p><strong>Resposta do Paciente:</strong> Terminei a caixa ontem.</p>
+<p><em><strong>Nota Educativa:</strong> Mesmo após a suspensão, a resposta imune pode continuar a destruir hemácias sensibilizadas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Verificou término do tratamento</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Fez exames ou mediu sinais vitais?</p>
+<p><strong>Resposta do Paciente:</strong> Fiz exames e me disseram que a hemoglobina estava muito baixa (7,5 g/dL).</p>
+<p><em><strong>Nota Educativa:</strong> Anemia severa com teste de Coombs positivo confirma hemólise imune.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Solicitou informações laboratoriais relevantes</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Algum histórico prévio de anemias ou reações a medicamentos?</p>
+<p><strong>Resposta do Paciente:</strong> Nunca tive nenhum problema anterior com medicamentos.</p>
+<p><em><strong>Nota Educativa:</strong> A ausência de histórico não exclui risco de reação a medicamentos recém-utilizados.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Investigou histórico de anemias e alergias medicamentosas</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Anemia hemolítica imunomediada associada ao uso de cefalosporina.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>

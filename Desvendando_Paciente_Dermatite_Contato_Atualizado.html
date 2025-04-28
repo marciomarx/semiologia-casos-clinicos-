@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Dermatite Alérgica de Contato</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Identificação de Hipersensibilidade Tipo IV (Dermatite de Contato)</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Bruna Silva (34 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual seu nome e idade?</p>
+<p><strong>Resposta do Paciente:</strong> Bruna Silva, 34 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a sua queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Após usar um creme novo no rosto, apareceu uma vermelhidão intensa, bolhas e muita coceira.</p>
+<p><em><strong>Nota Educativa:</strong> Dermatite de contato alérgica é uma reação tipo IV mediada por linfócitos T, surgindo após exposição a alérgenos.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Quando começaram os sintomas?</p>
+<p><strong>Resposta do Paciente:</strong> Começaram cerca de dois dias depois que comecei a usar o creme.</p>
+<p><em><strong>Nota Educativa:</strong> A reação tardia é característica da hipersensibilidade tipo IV, surgindo geralmente após 24–72 horas da exposição.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou o tempo de surgimento dos sintomas</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Você estava usando algum outro produto ou medicamento na pele?</p>
+<p><strong>Resposta do Paciente:</strong> Não, foi só esse creme novo mesmo.</p>
+<p><em><strong>Nota Educativa:</strong> A exclusividade da exposição ajuda na identificação do agente desencadeante.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Perguntou sobre uso de outros produtos tópicos</label>
+</div>
+
+<h3>Adesão ao Tratamento:</h3>
+<p><strong>Pergunta esperada:</strong> Você suspendeu o uso do produto?</p>
+<p><strong>Resposta do Paciente:</strong> Sim, parei de usar assim que a pele ficou vermelha.</p>
+<p><em><strong>Nota Educativa:</strong> A retirada do agente agressor é a primeira medida no manejo da dermatite de contato.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Verificou interrupção do agente desencadeante</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Você teve febre ou outros sintomas gerais?</p>
+<p><strong>Resposta do Paciente:</strong> Não, só a vermelhidão e coceira mesmo.</p>
+<p><em><strong>Nota Educativa:</strong> Em reações localizadas, geralmente os sinais sistêmicos estão ausentes.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Avaliou presença ou ausência de sinais sistêmicos</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Você já teve outras reações a cosméticos ou produtos tópicos?</p>
+<p><strong>Resposta do Paciente:</strong> Nunca tinha tido problema antes.</p>
+<p><em><strong>Nota Educativa:</strong> A sensibilização pode ocorrer de forma inesperada mesmo sem reações prévias.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Investigou histórico prévio de alergias cutâneas</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Dermatite de contato alérgica induzida por cosmético novo (hipersensibilidade tipo IV).</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>

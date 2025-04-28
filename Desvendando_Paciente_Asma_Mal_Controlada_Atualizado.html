@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Asma Mal Controlada</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Semiologia e Identificação de Técnica Incorreta de Inalação</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Letícia Souza (27 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual seu nome e idade?</p>
+<p><strong>Resposta do Paciente:</strong> Meu nome é Letícia Souza e tenho 27 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a sua queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Tenho tido muita tosse seca e fico com chiado no peito quando faço exercícios simples, como subir uma escada.</p>
+<p><em><strong>Nota Educativa:</strong> Pessoas com asma controlada não devem apresentar chiado ou tosse durante atividades leves.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Há quanto tempo apresenta esses sintomas? Eles estão piorando?</p>
+<p><strong>Resposta do Paciente:</strong> Esses sintomas têm piorado nos últimos dois meses. Sinto que às vezes melhora quando uso minha bombinha, mas nem sempre.</p>
+<p><em><strong>Nota Educativa:</strong> A boa adesão ao tratamento de manutenção previne pioras frequentes dos sintomas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou o tempo de evolução dos sintomas</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Você faz uso de alguma medicação?</p>
+<p><strong>Resposta do Paciente:</strong> Uso aquela bombinha azul (salbutamol) e também uma bombinha de corticoide para usar todo dia.</p>
+<p><em><strong>Nota Educativa:</strong> O medicamento de manutenção deve ser usado diariamente para prevenir crises asmáticas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Perguntou sobre medicamentos em uso</label>
+</div>
+
+<h3>Adesão e Técnica de Uso:</h3>
+<p><strong>Pergunta esperada:</strong> Como você utiliza a bombinha? Usa espaçador?</p>
+<p><strong>Resposta do Paciente:</strong> Não uso aquele tubo (espaçador), acho chato. Só aperto a bombinha e respiro normal, às vezes nem inspiro fundo. Uso a bombinha azul quando sinto falta de ar, mas esqueço de usar a de corticoide todos os dias.</p>
+<p><em><strong>Nota Educativa:</strong> A técnica correta envolve uso do espaçador e inspiração profunda e lenta após a aplicação.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Investigou a técnica e adesão ao tratamento</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Algum exame recente de pressão, frequência respiratória ou saturação de oxigênio?</p>
+<p><strong>Resposta do Paciente:</strong> Minha frequência respiratória é de 22 irpm e minha saturação está em 91% em repouso.</p>
+<p><em><strong>Nota Educativa:</strong> Saturações abaixo de 95% em repouso indicam possível problema respiratório.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Solicitou/avaliou sinais vitais básicos</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Você pratica atividade física? Fuma?</p>
+<p><strong>Resposta do Paciente:</strong> Não pratico atividade física regularmente, mas também não fumo.</p>
+<p><em><strong>Nota Educativa:</strong> Atividade física regular é benéfica para o controle da asma.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Questionou sobre hábitos de vida</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Técnica de uso incorreta do inalador e não adesão ao tratamento de manutenção.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>

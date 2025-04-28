@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Enteroparasitose e Deficiência Nutricional</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Identificação de Enteroparasitose e Deficiência Nutricional</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Carlos Eduardo Silva (27 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual seu nome e idade?</p>
+<p><strong>Resposta do Paciente:</strong> Carlos Eduardo Silva, 27 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a sua queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Estou com muita fraqueza e emagrecimento nos últimos meses.</p>
+<p><em><strong>Nota Educativa:</strong> Enteroparasitoses podem comprometer a absorção de nutrientes, levando à deficiência nutricional e perda de peso.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Quando começaram esses sintomas?</p>
+<p><strong>Resposta do Paciente:</strong> Há uns dois meses eu comecei a me sentir mais fraco e percebi que estava emagrecendo.</p>
+<p><em><strong>Nota Educativa:</strong> A evolução lenta de sintomas é comum em infestações parasitárias crônicas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou o tempo de evolução dos sintomas</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Fez algum exame ou usou algum medicamento recentemente?</p>
+<p><strong>Resposta do Paciente:</strong> Fiz exame de fezes e deu positivo para vermes. Comecei um tratamento, mas ainda não terminei.</p>
+<p><em><strong>Nota Educativa:</strong> O diagnóstico e o tratamento adequados são essenciais para corrigir a deficiência nutricional e eliminar o parasita.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Perguntou sobre exames e início de tratamento</label>
+</div>
+
+<h3>Adesão ao Tratamento:</h3>
+<p><strong>Pergunta esperada:</strong> Está tomando os medicamentos conforme a prescrição?</p>
+<p><strong>Resposta do Paciente:</strong> Estou sim, mas me esqueço às vezes de tomar no horário certo.</p>
+<p><em><strong>Nota Educativa:</strong> A adesão rigorosa ao tratamento antiparasitário é crucial para a eficácia terapêutica e para prevenir reinfestações.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Verificou adesão correta ao tratamento antiparasitário</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Apresentou febre, dor abdominal ou alterações nas fezes?</p>
+<p><strong>Resposta do Paciente:</strong> Tenho fezes mais amolecidas e às vezes dor de barriga, mas sem febre.</p>
+<p><em><strong>Nota Educativa:</strong> Alterações gastrointestinais são sintomas comuns nas enteroparasitoses e devem ser monitoradas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Investigou sintomas gastrointestinais e sinais de gravidade</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Como são seus hábitos de higiene e alimentação?</p>
+<p><strong>Resposta do Paciente:</strong> Como fora de casa quase todo dia e nem sempre lavo bem as mãos.</p>
+<p><em><strong>Nota Educativa:</strong> Hábitos de higiene inadequados aumentam o risco de infecção e reinfecção por parasitas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Investigou fatores de risco ambientais e de higiene</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Enteroparasitose leve associada a deficiência nutricional devido a má absorção crônica.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>

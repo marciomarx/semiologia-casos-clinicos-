@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Síndrome do Soro</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Identificação de Reação de Hipersensibilidade Tipo III (Síndrome do Soro)</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Fernando Alves (29 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual seu nome e idade?</p>
+<p><strong>Resposta do Paciente:</strong> Fernando Alves, 29 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a sua queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Estou com muita dor nas articulações, febre e manchas na pele que coçam muito.</p>
+<p><em><strong>Nota Educativa:</strong> Síndrome do soro se caracteriza por febre, artralgias e erupções cutâneas após exposição a proteínas heterólogas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Quando esses sintomas começaram?</p>
+<p><strong>Resposta do Paciente:</strong> Começaram há uns 7 dias, depois de ter levado um corte e tomado uma injeção no hospital.</p>
+<p><em><strong>Nota Educativa:</strong> Reações tipo III surgem geralmente entre 7 a 10 dias após exposição ao agente.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou tempo de evolução dos sintomas</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Você sabe qual medicamento ou vacina tomou?</p>
+<p><strong>Resposta do Paciente:</strong> Tomei uma dose de soro antitetânico porque me cortei com ferro enferrujado.</p>
+<p><em><strong>Nota Educativa:</strong> O soro heterólogo (antitetânico) pode desencadear formação de complexos imunes, levando à síndrome do soro.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Perguntou sobre medicamento/imunização recente</label>
+</div>
+
+<h3>Adesão ao Tratamento:</h3>
+<p><strong>Pergunta esperada:</strong> Você recebeu alguma orientação após a injeção?</p>
+<p><strong>Resposta do Paciente:</strong> Só mandaram observar qualquer reação, mas não disseram exatamente o que poderia acontecer.</p>
+<p><em><strong>Nota Educativa:</strong> A educação prévia sobre possíveis reações adversas é essencial na administração de soros heterólogos.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Verificou se houve orientação farmacêutica prévia</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Você sabe como estavam seus sinais vitais nas consultas?</p>
+<p><strong>Resposta do Paciente:</strong> Me disseram que estava com febre alta, mas pressão normal.</p>
+<p><em><strong>Nota Educativa:</strong> Febre e inflamação são achados comuns em reações imunes mediadas por complexos antígeno-anticorpo.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Solicitou informações sobre sinais vitais</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Algum histórico de alergias ou reações a medicamentos?</p>
+<p><strong>Resposta do Paciente:</strong> Nunca tive alergias antes.</p>
+<p><em><strong>Nota Educativa:</strong> Mesmo sem histórico, o risco de reações imunes existe na primeira exposição a antígenos heterólogos.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Investigou histórico de alergias anteriores</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Reação imunomediada (síndrome do soro) após uso de soro antitetânico heterólogo.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Úlcera Gástrica por AINEs</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Identificação de Úlcera Gástrica Leve Induzida por AINEs</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Rafael Gomes (48 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual seu nome e idade?</p>
+<p><strong>Resposta do Paciente:</strong> Rafael Gomes, 48 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a sua queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Estou com dor de estômago, principalmente logo depois que como.</p>
+<p><em><strong>Nota Educativa:</strong> A dor epigástrica pós-prandial pode indicar irritação gástrica ou úlcera gástrica.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Há quanto tempo começou a dor?</p>
+<p><strong>Resposta do Paciente:</strong> Há mais ou menos três semanas, depois que comecei a tomar remédio para dor no joelho.</p>
+<p><em><strong>Nota Educativa:</strong> AINEs como anti-inflamatórios podem reduzir a proteção da mucosa gástrica, predispondo a úlceras.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou o tempo de início dos sintomas</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Qual medicamento você está usando?</p>
+<p><strong>Resposta do Paciente:</strong> Estou tomando diclofenaco duas vezes por dia, sem protetor gástrico.</p>
+<p><em><strong>Nota Educativa:</strong> O uso de AINEs sem gastroprotetor aumenta significativamente o risco de lesão gástrica.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Perguntou sobre medicamentos em uso</label>
+</div>
+
+<h3>Adesão ao Tratamento:</h3>
+<p><strong>Pergunta esperada:</strong> Você foi orientado a tomar algum medicamento para proteger o estômago?</p>
+<p><strong>Resposta do Paciente:</strong> Não, o médico só falou para usar o anti-inflamatório por 10 dias.</p>
+<p><em><strong>Nota Educativa:</strong> A prescrição concomitante de gastroprotetores é indicada em grupos de risco para complicações gastrointestinais.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Verificou orientação e acompanhamento do tratamento</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Você percebeu vômito com sangue ou fezes muito escuras?</p>
+<p><strong>Resposta do Paciente:</strong> Não, só dor mesmo, não tive sangramento até agora.</p>
+<p><em><strong>Nota Educativa:</strong> A ausência de sinais de sangramento sugere úlcera inicial ou irritação sem perfuração ativa.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Avaliou sinais de gravidade</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Você consome bebida alcoólica ou fuma?</p>
+<p><strong>Resposta do Paciente:</strong> Bebo socialmente e fumo de vez em quando.</p>
+<p><em><strong>Nota Educativa:</strong> Álcool e tabaco são fatores agravantes para o desenvolvimento e complicação de úlceras gástricas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Investigou fatores de risco adicionais</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Úlcera gástrica leve induzida pelo uso de AINEs sem gastroproteção.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>

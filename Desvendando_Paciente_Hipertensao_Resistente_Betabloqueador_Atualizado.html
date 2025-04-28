@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Hipertensão Resistente e Uso Ineficaz de Betabloqueador</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Identificação de Hipertensão Resistente com Uso Ineficaz de Betabloqueador</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Paulo Henrique Souza (61 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual seu nome e idade?</p>
+<p><strong>Resposta do Paciente:</strong> Paulo Henrique Souza, 61 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a sua queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Minha pressão não baixa direito, mesmo tomando remédio todos os dias.</p>
+<p><em><strong>Nota Educativa:</strong> Hipertensão resistente é caracterizada pela pressão arterial não controlada apesar do uso de três ou mais medicamentos anti-hipertensivos em doses adequadas, incluindo um diurético.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Há quanto tempo está enfrentando esse problema?</p>
+<p><strong>Resposta do Paciente:</strong> Faz mais de 1 ano que tento controlar, mas não consigo direito.</p>
+<p><em><strong>Nota Educativa:</strong> A hipertensão resistente deve ser investigada quanto à adesão, técnica de aferição, doses e possíveis causas secundárias.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou tempo de evolução dos sintomas</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Que medicamentos você está usando?</p>
+<p><strong>Resposta do Paciente:</strong> Estou usando só atenolol 25 mg uma vez por dia.</p>
+<p><em><strong>Nota Educativa:</strong> Em hipertensão resistente, o tratamento com apenas um betabloqueador em baixa dose é insuficiente, sendo necessária a combinação de múltiplas classes de anti-hipertensivos.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Investigou medicamentos em uso e suas doses</label>
+</div>
+
+<h3>Adesão ao Tratamento:</h3>
+<p><strong>Pergunta esperada:</strong> Está usando o medicamento conforme prescrito?</p>
+<p><strong>Resposta do Paciente:</strong> Sim, todos os dias de manhã.</p>
+<p><em><strong>Nota Educativa:</strong> Apesar da boa adesão, a escolha e o ajuste inadequados do regime medicamentoso comprometem o controle da hipertensão.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Confirmou adesão ao regime terapêutico atual</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Quais são os valores recentes da sua pressão arterial?</p>
+<p><strong>Resposta do Paciente:</strong> Fica em torno de 160 por 105 mmHg mesmo tomando o remédio.</p>
+<p><em><strong>Nota Educativa:</strong> A persistência de níveis pressóricos elevados confirma a necessidade de revisão do tratamento e investigação de causas secundárias.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Verificou valores atuais de pressão arterial</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Mudou seus hábitos de vida (dieta, exercício)?</p>
+<p><strong>Resposta do Paciente:</strong> Não muito, continuo comendo bastante carne e sal.</p>
+<p><em><strong>Nota Educativa:</strong> Mudanças de hábitos de vida são fundamentais para o controle efetivo da hipertensão, especialmente nos casos resistentes.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Investigou fatores de estilo de vida</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Hipertensão resistente tratada inadequadamente apenas com betabloqueador em monoterapia e sem mudanças efetivas de estilo de vida.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>

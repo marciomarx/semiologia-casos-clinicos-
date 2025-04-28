@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Hipertensão Leve sem Adesão Não Farmacológica</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Identificação de Hipertensão Leve e Falha na Mudança de Estilo de Vida</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Luciano Mendes (52 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual seu nome e idade?</p>
+<p><strong>Resposta do Paciente:</strong> Luciano Mendes, 52 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a sua queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Tenho pressão alta, mas não tomo remédio ainda, só me falaram para tentar mudar meus hábitos.</p>
+<p><em><strong>Nota Educativa:</strong> Em hipertensão leve, o tratamento inicial é baseado em mudanças no estilo de vida, mas a adesão é crítica para sucesso terapêutico.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Há quanto tempo recebeu o diagnóstico de hipertensão?</p>
+<p><strong>Resposta do Paciente:</strong> Descobri há uns 6 meses num exame de rotina.</p>
+<p><em><strong>Nota Educativa:</strong> Diagnósticos recentes precisam de monitoramento rigoroso para evolução do quadro e reforço das orientações não farmacológicas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou tempo de diagnóstico</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Está usando algum medicamento para pressão alta?</p>
+<p><strong>Resposta do Paciente:</strong> Não, o médico disse para eu tentar mudar a alimentação e fazer caminhada.</p>
+<p><em><strong>Nota Educativa:</strong> Mudanças no estilo de vida são primeira linha na hipertensão leve, mas exigem adesão contínua e orientação adequada.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Investigou o tratamento atual ou ausência dele</label>
+</div>
+
+<h3>Adesão ao Tratamento:</h3>
+<p><strong>Pergunta esperada:</strong> Está conseguindo seguir as orientações sobre dieta e atividade física?</p>
+<p><strong>Resposta do Paciente:</strong> Não muito... continuo comendo salgadinhos e não comecei a caminhar ainda.</p>
+<p><em><strong>Nota Educativa:</strong> A falta de adesão às orientações de estilo de vida compromete o controle da hipertensão e aumenta o risco de progressão da doença.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Avaliou adesão ao tratamento não farmacológico</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Sabe qual foi a última medição da sua pressão arterial?</p>
+<p><strong>Resposta do Paciente:</strong> A última vez que medi estava 145 por 95 mmHg.</p>
+<p><em><strong>Nota Educativa:</strong> Pressões acima de 140/90 mmHg persistentes após tentativas de mudança de estilo de vida indicam necessidade de considerar farmacoterapia.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Verificou valores atuais de pressão arterial</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Você fuma ou bebe álcool com frequência?</p>
+<p><strong>Resposta do Paciente:</strong> Bebo nos fins de semana, mas não fumo.</p>
+<p><em><strong>Nota Educativa:</strong> O consumo de álcool é um fator de risco adicional para descontrole da hipertensão.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Investigou hábitos que impactam a hipertensão</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Hipertensão leve sem adesão adequada às mudanças de estilo de vida prescritas.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>

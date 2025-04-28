@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Hipertensão Controlada com Má Prática de Aferição</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Identificação de Hipertensão Controlada com Má Técnica de Aferição</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Sandra Oliveira (49 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual seu nome e idade?</p>
+<p><strong>Resposta do Paciente:</strong> Sandra Oliveira, 49 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a sua queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Minha pressão parece ficar alta às vezes em casa, mas no posto sempre dizem que está normal.</p>
+<p><em><strong>Nota Educativa:</strong> Erros na técnica de aferição domiciliar podem gerar leituras falsamente elevadas e causar confusão no manejo da hipertensão.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Há quanto tempo está verificando a pressão em casa?</p>
+<p><strong>Resposta do Paciente:</strong> Comecei a medir faz uns 3 meses depois que o médico pediu.</p>
+<p><em><strong>Nota Educativa:</strong> A automonitorização é importante, mas precisa ser realizada corretamente para evitar interpretações erradas.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou início da automonitorização</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Está utilizando algum medicamento para hipertensão?</p>
+<p><strong>Resposta do Paciente:</strong> Sim, tomo losartana 50 mg duas vezes ao dia conforme o médico orientou.</p>
+<p><em><strong>Nota Educativa:</strong> Losartana é um antagonista dos receptores de angiotensina II, amplamente utilizado no controle da hipertensão.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Investigou medicamentos em uso</label>
+</div>
+
+<h3>Adesão ao Tratamento:</h3>
+<p><strong>Pergunta esperada:</strong> Está tomando os medicamentos corretamente?</p>
+<p><strong>Resposta do Paciente:</strong> Sim, nunca esqueço as doses.</p>
+<p><em><strong>Nota Educativa:</strong> Boa adesão ao tratamento é essencial para o controle efetivo da pressão arterial.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Verificou adesão correta ao tratamento farmacológico</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Como você realiza a medição da pressão em casa?</p>
+<p><strong>Resposta do Paciente:</strong> Eu meço logo depois de subir as escadas ou de fazer alguma coisa, meio rápido.</p>
+<p><em><strong>Nota Educativa:</strong> A aferição deve ser realizada após 5 minutos de repouso, sem esforço físico recente, para garantir resultados confiáveis.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Investigou a técnica utilizada na automonitorização</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Mudou seus hábitos alimentares ou faz atividade física?</p>
+<p><strong>Resposta do Paciente:</strong> Sim, reduzi bastante o sal e caminho três vezes na semana.</p>
+<p><em><strong>Nota Educativa:</strong> Mudanças de estilo de vida complementam o tratamento medicamentoso na hipertensão.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Investigou mudanças de estilo de vida</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Hipertensão controlada farmacologicamente, mas com automonitorização inadequada que gera falsa percepção de descontrole.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>

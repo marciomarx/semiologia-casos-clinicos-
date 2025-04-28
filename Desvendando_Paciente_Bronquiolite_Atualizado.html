@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvendando o Paciente - Bronquiolite</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 10px; }
+    h1, h2, h3 { color: #333; }
+    .checkpoint { margin-bottom: 10px; margin-top: 5px; }
+    .result { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    button { margin-top: 15px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Desvendando o Paciente</h1>
+<p><strong>Professor:</strong> Márcio Marques (@profmarciomarx)</p>
+<p><strong>Objetivo:</strong> Simulação de Atendimento Farmacêutico — Semiologia e Identificação de Abandono Precoce do Tratamento</p>
+
+<h2>Apresentação da Técnica</h2>
+<p>Esta atividade propõe uma simulação prática para treinar a capacidade de coleta de dados clínicos farmacêuticos. O aluno atuando como farmacêutico deverá realizar perguntas adequadas para desvendar a situação clínica do paciente. As informações serão liberadas apenas conforme perguntas corretas forem realizadas.</p>
+
+<h2>Orientações para a Dinâmica</h2>
+<ul>
+  <li>Trabalhe em dupla: um aluno será o <strong>Farmacêutico</strong> e o outro o <strong>Paciente</strong>.</li>
+  <li>O Paciente deve responder conforme o script e apenas após a pergunta adequada do Farmacêutico.</li>
+  <li>Após cada resposta adequada, marque o checkpoint correspondente.</li>
+  <li>Ao final, calcule a pontuação para avaliar o desempenho do Farmacêutico.</li>
+</ul>
+
+<h2>Script do Paciente - Miguel Lemos (2 anos)</h2>
+
+<h3>Identificação Inicial:</h3>
+<p><strong>Pergunta esperada:</strong> Qual o nome e a idade do paciente?</p>
+<p><strong>Resposta do Paciente:</strong> Miguel Lemos, 2 anos.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="identificacao">
+  <label for="identificacao">Identificou corretamente nome e idade</label>
+</div>
+
+<h3>Queixa Principal:</h3>
+<p><strong>Pergunta esperada:</strong> Qual a queixa principal?</p>
+<p><strong>Resposta do Paciente:</strong> Tosse produtiva intensa e dificuldade para respirar, principalmente à noite.</p>
+<p><em><strong>Nota Educativa:</strong> Tosse produtiva e dificuldade respiratória noturna são sinais comuns em bronquiolite viral.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="queixa">
+  <label for="queixa">Perguntou corretamente a queixa principal</label>
+</div>
+
+<h3>História da Doença Atual:</h3>
+<p><strong>Pergunta esperada:</strong> Há quanto tempo começou e como evoluíram os sintomas?</p>
+<p><strong>Resposta do Paciente:</strong> Começou há 5 dias e piorou nos últimos dias, com tosse forte e chiado.</p>
+<p><em><strong>Nota Educativa:</strong> A piora dos sintomas entre o terceiro e o quinto dia é típica da evolução da bronquiolite.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="historia">
+  <label for="historia">Investigou tempo de evolução dos sintomas</label>
+</div>
+
+<h3>História Medicamentosa:</h3>
+<p><strong>Pergunta esperada:</strong> Está utilizando algum medicamento ou fazendo algum tratamento?</p>
+<p><strong>Resposta do Paciente:</strong> Foi prescrito nebulização com salbutamol e soro fisiológico, três vezes ao dia.</p>
+<p><em><strong>Nota Educativa:</strong> A nebulização deve ser realizada conforme a prescrição para reduzir sintomas e evitar complicações.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="medicamentos">
+  <label for="medicamentos">Perguntou sobre medicamentos e tratamento prescrito</label>
+</div>
+
+<h3>Adesão ao Tratamento:</h3>
+<p><strong>Pergunta esperada:</strong> Está seguindo corretamente o tratamento?</p>
+<p><strong>Resposta do Paciente:</strong> Paramos de fazer a nebulização depois de três dias porque ele parecia melhor. Não voltamos no médico.</p>
+<p><em><strong>Nota Educativa:</strong> A interrupção precoce do tratamento pode levar à piora dos sintomas e necessidade de hospitalização.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="adesao">
+  <label for="adesao">Investigou adesão ao tratamento</label>
+</div>
+
+<h3>Sinais Vitais:</h3>
+<p><strong>Pergunta esperada:</strong> Possui alguma informação sobre saturação de oxigênio ou frequência respiratória?</p>
+<p><strong>Resposta do Paciente:</strong> Saturação de O2 em 87% e frequência respiratória de 38 irpm.</p>
+<p><em><strong>Nota Educativa:</strong> Saturações abaixo de 90% em repouso são indicativas de hipoxemia grave.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="sinais">
+  <label for="sinais">Solicitou/avaliou sinais vitais</label>
+</div>
+
+<h3>Hábitos de Vida:</h3>
+<p><strong>Pergunta esperada:</strong> Há fatores de risco no ambiente domiciliar?</p>
+<p><strong>Resposta do Paciente:</strong> Em casa muita gente ficou gripada recentemente e ninguém usou máscara.</p>
+<p><em><strong>Nota Educativa:</strong> Em bronquiolite, medidas de prevenção no ambiente domiciliar são fundamentais.</em></p>
+<div class="checkpoint">
+  <input type="checkbox" id="habitos">
+  <label for="habitos">Questionou sobre ambiente domiciliar e fatores de risco</label>
+</div>
+
+<h3>Identificação do Problema Central:</h3>
+<p><strong>Problema a ser identificado:</strong> Abandono precoce do tratamento e falta de reavaliação médica.</p>
+<div class="checkpoint">
+  <input type="checkbox" id="problema">
+  <label for="problema">Identificou corretamente o problema central</label>
+</div>
+
+<button onclick="calcularPontuacao()">Calcular Pontuação</button>
+
+<div class="result" id="resultado"></div>
+
+<script>
+function calcularPontuacao() {
+  const totalCheckpoints = document.querySelectorAll('input[type="checkbox"]').length;
+  const marcados = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const nota = Math.round((marcados / totalCheckpoints) * 100);
+
+  let mensagem = `Pontuação final: ${nota}/100. `;
+  if (nota >= 80) {
+    mensagem += "Excelente condução da entrevista!";
+  } else if (nota >= 50) {
+    mensagem += "Bom desempenho, mas pode melhorar.";
+  } else {
+    mensagem += "Atenção: necessidade de melhorar a técnica de anamnese.";
+  }
+
+  document.getElementById('resultado').innerText = mensagem;
+}
+</script>
+
+</body>
+</html>
